@@ -1,31 +1,69 @@
-# Diabetes-Prediction
-🩺 Diabetes Prediction using Machine Learning
+🩺 Diabetes Prediction Using Machine Learning
 
-This project focuses on building a predictive machine learning model that can accurately determine whether a person is likely to have diabetes based on various health parameters. Using the Pima Indians Diabetes Dataset, the model is trained and evaluated using different algorithms, including Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine (SVM).
+This project is a web-based application that predicts whether a person is likely to have diabetes based on various health parameters. It uses machine learning techniques for prediction and is deployed using Streamlit for easy access and interaction.
 
-The pipeline includes:
+📌 Project Overview
 
-🔍 Data Cleaning: Handling missing values, outliers, and standardizing input features.
+Early detection of diabetes is crucial for timely treatment and lifestyle adjustments. This project aims to assist individuals and medical professionals by providing a quick, data-driven diabetes prediction tool.
 
-📊 Exploratory Data Analysis (EDA): Understanding relationships and trends using visualization tools.
+🚀 Features
 
-🧠 Model Training & Evaluation: Multiple models are trained, and their performance is compared using accuracy, precision, recall, and F1-score.
+- User-friendly interface built with Streamlit
+- Accepts input for health-related parameters
+- Predicts the likelihood of diabetes using trained ML models
+- Uses preprocessed and cleaned dataset for accurate results
+- Saves the best-performing model using `joblib`
+- Connected to SQLite database to store user input and predictions
 
-💾 Model Deployment: The best-performing model is saved using joblib and integrated into a Streamlit web application for real-time predictions.
+📊 Dataset
 
-🗄️ Database Integration: User input and prediction results are stored in an SQLite database for future analysis and tracking.
+The dataset used in this project is the Pima Indians Diabetes Dataset, which is publicly available on platforms like Kaggle or UCI Machine Learning Repository.
 
-💡 Objective:
-To create an easy-to-use, interactive web application that can assist individuals or healthcare providers in early detection of diabetes, thus enabling timely medical intervention.
+Features used:
+- Pregnancies
+- Glucose
+- Blood Pressure
+- Skin Thickness
+- Insulin
+- BMI
+- Diabetes Pedigree Function
+- Age
 
-🧰 Tech Stack:
-Python
+⚙️ Technologies Used
 
-Pandas, NumPy, Matplotlib, Seaborn
+- Python 🐍
+- Pandas & NumPy – Data manipulation
+- Matplotlib & Seaborn – Data visualization
+- Scikit-learn – Machine learning models and preprocessing
+- Joblib – Model saving/loading
+- Streamlit – Web app deployment
+- SQLite – Database for storing input and results
 
-Scikit-learn
+🧠 Machine Learning Models
 
-Streamlit
+Multiple models were tested:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors (KNN)
+- Support Vector Machine (SVM)
 
-SQLite
+The best model was selected based on accuracy and performance metrics such as:
+- Confusion Matrix
+- Accuracy Score
+- Precision, Recall, F1 Score
+
+🧪 How to Run the Project
+streamlit run app.py
+diabetes-prediction/
+│
+├── app.py                  # Streamlit application
+├── diabetes_model.pkl      # Trained model
+├── scaler.pkl              # Scaler for preprocessing
+├── diabetes.csv            # Dataset
+├── Project.ipynb        # Python dependencies
+├── setup_db.py             # SQLite database
+└── README.md               # Project documentation
+
+
 
