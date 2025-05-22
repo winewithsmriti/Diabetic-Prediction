@@ -1,4 +1,4 @@
-# Diabetic-Prediction
+# Diabetes-Prediction
 🩺 Diabetes Prediction using Machine Learning
 
 This project focuses on building a predictive machine learning model that can accurately determine whether a person is likely to have diabetes based on various health parameters. Using the Pima Indians Diabetes Dataset, the model is trained and evaluated using different algorithms, including Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine (SVM).
