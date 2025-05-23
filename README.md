@@ -61,8 +61,8 @@ diabetes-prediction/
 ├── diabetes_model.pkl      # Trained model
 ├── scaler.pkl              # Scaler for preprocessing
 ├── diabetes.csv            # Dataset
-├── Project.ipynb        # Python dependencies
-├── setup_db.py             # SQLite database
+├── Project.ipynb           # Python dependencies
+├── patients_db             # SQLite database
 └── README.md               # Project documentation
 
 
